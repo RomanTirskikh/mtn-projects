@@ -55,7 +55,7 @@
   <target name="clean">
     <delete dir="${build}"/>
     <delete dir="${dist}"/>
-	<echo>=== Cleaning complete ===</echo>
+	<echo>=== Clean complete ===</echo>
   </target>
 
  </project>
