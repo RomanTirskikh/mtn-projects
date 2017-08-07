@@ -74,7 +74,7 @@
 		<version>2.5</version>
         <configuration>
           <skipTests>false</skipTests>
-          <redirectTestOutputToFile>true</redirectTestOutputToFile>
+          <redirectTestOutputToFile>false</redirectTestOutputToFile>
         </configuration>
       </plugin>
     </plugins>
