@@ -54,10 +54,10 @@
 		<version>3.3</version>
         <configuration>
           <finalName>${project.version}-${maven.build.timestamp}</finalName>
-		  <descriptorRefs>
+		  <!--descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
-          </descriptorRefs>
-          <!--descriptor>/assembly.xml</descriptor-->
+          </descriptorRefs-->
+          <descriptor>/assembly.xml</descriptor>
         </configuration>
 		<executions>
           <execution>
