@@ -39,6 +39,14 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<version>5.1</version>
 		</dependency>
 	</dependencies>
+	
+	<distributionManagement>
+		<repository>
+			<id>MVN_tsk</id>
+			<url>http://localhost/nexus/content/repositories/MVN_tsk</url>
+		</repository>
+	</distributionManagement>
+
 
 	<build>
 		<defaultGoal>clean</defaultGoal>
@@ -95,34 +103,23 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 				</configuration-->
 			</plugin>
 
- <plugin>
- <groupId>org.apache.maven.plugins</groupId>
- <artifactId>maven-deploy-plugin</artifactId>
- <version>2.5</version>
-
-<distributionManagement>
-  <repository>
-    <id>MVN_tsk</id>
-    <url>http://localhost/nexus/content/repositories/MVN_tsk</url>
-  </repository>
-</distributionManagement>
-
-
- <configuration>
- <file>${project.basedir}/module3/maven-task/target\${project.artifactId}-${project.version}.jar</file>
- <url>http://localhost/nexus/content/repositories/MVN_tsk</url>
- <repositoryId>MVN_tsk</repositoryId>
- <username>admin</username>
- <password>admin123</password>
- <groupId>${project.groupId}</groupId>
- <artifactId>${project.artifactId}</artifactId>
- <version>${project.version}</version>
- <packaging>jar</packaging>
- <pomFile>pom.xml</pomFile>
- </configuration>
- </plugin>	
-
-	
+			 <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<file>${project.basedir}/module3/maven-task/target\${project.artifactId}-${project.version}.jar</file>
+					<url>http://localhost/nexus/content/repositories/MVN_tsk</url>
+					<repositoryId>MVN_tsk</repositoryId>
+					<username>admin</username>
+					<password>admin123</password>
+					<groupId>${project.groupId}</groupId>
+					<artifactId>${project.artifactId}</artifactId>
+					<version>${project.version}</version>
+					<packaging>jar</packaging>
+					<pomFile>pom.xml</pomFile>
+				</configuration>
+			 </plugin>	
 		</plugins>
 	</build>
 </project>
