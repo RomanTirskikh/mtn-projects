@@ -117,7 +117,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 					<artifactId>${project.artifactId}</artifactId>
 					<version>${project.version}</version>
 					<packaging>jar</packaging>
-					<pomFile>pom.xml</pomFile>
+					<pomFile>${project.basedir}/module3/maven-task/pom.xml</pomFile>
 				</configuration>
 			 </plugin>	
 		</plugins>
