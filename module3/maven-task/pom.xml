@@ -44,8 +44,6 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		<snapshotRepository>
 			<id>snapshots</id>
 			<url>http://localhost/nexus/content/repositories/snapshots</url>
-			<username>admin</username>
-			<password>admin123</password>
 		</snapshotRepository>
 	</distributionManagement>
 	
