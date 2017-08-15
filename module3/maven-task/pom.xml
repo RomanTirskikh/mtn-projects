@@ -58,7 +58,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.3</version>
 				<configuration>
-					<finalName>${project.version}-${maven.build.timestamp}</finalName>
+					<finalName>${project.artifactId}-${project.version}</finalName>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
@@ -97,13 +97,8 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 						<version>2.20</version>
 					</dependency>
 				</dependencies>
-				<!--configuration>
-					<skipTests>false</skipTests>
-					<redirectTestOutputToFile>false</redirectTestOutputToFile>
-				</configuration-->
 			</plugin>
-
-			 <plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
 				<version>2.5</version>
