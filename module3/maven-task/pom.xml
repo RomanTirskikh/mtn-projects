@@ -10,8 +10,7 @@
   <version>${maven.build.timestamp}</version>
   <name>maven-task</name>
   
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <properties>    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <timestamp>${maven.build.timestamp}</timestamp>
     <maven.build.timestamp.format>yyyy-MM-dd-HH:mm</maven.build.timestamp.format>
   </properties>
@@ -43,9 +42,10 @@
       <artifactId>sonar-maven-plugin</artifactId>	
       <version>5.1</version>
     </dependency>
-  
+
+	  
   </dependencies>
-  
+ 
 <build>
 	<defaultGoal>clean</defaultGoal>
     	<directory>${project.basedir}/target</directory>
@@ -55,7 +55,7 @@
       
 	<plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
+-        <artifactId>maven-compiler-plugin</artifactId>
 	<version>3.3</version>
         <configuration>
         	<finalName>${project.version}-${maven.build.timestamp}</finalName>
@@ -74,7 +74,7 @@
         </executions>
 	</plugin>
 	
-	<plugin>
+	<!--plugin>
                <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <version>1.2.0.Alpha6</version>
@@ -85,7 +85,7 @@
                     <password>admin123</password>
                     <name>${wildfly-name}</name>
                 </configuration>
-        </plugin>	
+        </plugin-->	
 	
 	<plugin>
         <groupId>org.apache.maven.plugins</groupId>
