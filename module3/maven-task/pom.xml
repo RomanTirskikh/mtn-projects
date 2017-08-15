@@ -109,10 +109,10 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 				<version>2.5</version>
 				<configuration>
 					<file>${project.basedir}target\${project.artifactId}-${project.version}.jar</file>
-					<repositoryId>releases</repositoryId>
+					<repositoryId>snapshots</repositoryId>
 					<username>admin</username>
 					<password>admin123</password>
-					<url>http://localhost/nexus/content/repositories/releases</url>
+					<url>http://localhost/nexus/content/repositories/snapshots</url>
 					<groupId>${project.groupId}</groupId>
 					<artifactId>${project.artifactId}</artifactId>
 					<version>${project.version}</version>
