@@ -39,20 +39,13 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<version>5.1</version>
 		</dependency>
 	</dependencies>
-	
+
 	<distributionManagement>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<url>http://localhost/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
-	
-	<!--distributionManagement>
 		<repository>
-			<id>MVN_tsk</id>
-			<url>http://localhost/nexus/content/repositories/MVN_tsk</url>
+			<id>mvntsk</id>
+			<url>http://localhost/nexus/content/repositories/mvntsk</url>
 		</repository>
-	</distributionManagement-->
+	</distributionManagement>
 
 
 	<build>
@@ -116,10 +109,10 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 				<version>2.5</version>
 				<configuration>
 					<file>${project.basedir}/target\${project.artifactId}-${project.version}.jar</file>
-					<!--repositoryId>snapshots</repositoryId>
+					<repositoryId>mvntsk</repositoryId>
 					<username>admin</username>
 					<password>admin123</password>
-					<url>http://localhost/nexus/content/repositories/snapshots</url-->
+					<url>http://localhost/nexus/content/repositories/mvntsk</url>
 					<groupId>${project.groupId}</groupId>
 					<artifactId>${project.artifactId}</artifactId>
 					<version>${project.version}</version>
