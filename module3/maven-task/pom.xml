@@ -40,12 +40,12 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</dependency>
 	</dependencies>
 	
-	<!--distributionManagement>
+	<distributionManagement>
 		<repository>
 			<id>MVN_tsk</id>
 			<url>http://localhost/nexus/content/repositories/MVN_tsk</url>
 		</repository>
-	</distributionManagement-->
+	</distributionManagement>
 
 
 	<build>
