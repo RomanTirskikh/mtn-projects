@@ -40,12 +40,12 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</dependency>
 	</dependencies>
 	
-	<distributionManagement>
+	<!--distributionManagement>
 		<repository>
 			<id>MVN_tsk</id>
 			<url>http://localhost/nexus/content/repositories/MVN_tsk</url>
 		</repository>
-	</distributionManagement>
+	</distributionManagement-->
 
 
 	<build>
@@ -109,8 +109,8 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 				<version>2.5</version>
 				<configuration>
 					<file>${project.basedir}/module3/maven-task/target\${project.artifactId}-${project.version}.jar</file>
-					<!--url>http://localhost/nexus/content/repositories/MVN_tsk</url>
-					<repositoryId>MVN_tsk</repositoryId-->
+					<url>http://localhost/nexus/content/repositories/MVN_tsk</url>
+					<repositoryId>MVN_tsk</repositoryId>
 					<username>admin</username>
 					<password>admin123</password>
 					<groupId>${project.groupId}</groupId>
