@@ -99,6 +99,15 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
  <groupId>org.apache.maven.plugins</groupId>
  <artifactId>maven-deploy-plugin</artifactId>
  <version>2.5</version>
+
+<distributionManagement>
+  <repository>
+    <id>MVN_tsk</id>
+    <url>http://localhost/nexus/content/repositories/MVN_tsk</url>
+  </repository>
+</distributionManagement>
+
+
  <configuration>
  <file>${project.basedir}/module3/maven-task/target\${project.artifactId}-${project.version}.jar</file>
  <url>http://localhost/nexus/content/repositories/MVN_tsk</url>
@@ -112,6 +121,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
  <pomFile>pom.xml</pomFile>
  </configuration>
  </plugin>	
+
 	
 		</plugins>
 	</build>
