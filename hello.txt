@@ -1,2 +1,1 @@
-trigger comment
-another trigger comment
+trigger commit
