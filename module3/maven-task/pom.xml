@@ -7,7 +7,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<groupId>com.epam.frm</groupId>
 	<artifactId>ci-training</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0</version>
+	<version>${maven.build.timestamp}</version>
 	<name>maven-task</name>
 	<properties>    
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
