@@ -40,12 +40,12 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 		</dependency>
 	</dependencies>
 
-	<distributionManagement>
+	<!--distributionManagement>
 		<repository>
 			<id>mvntsk</id>
 			<url>http://localhost/nexus/content/repositories/mvntsk</url>
 		</repository>
-	</distributionManagement>
+	</distributionManagement-->
 
 
 	<build>
@@ -107,23 +107,23 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 				</configuration>
 			</plugin>
 			<plugin>
-			<groupId>org.sonatype.plugins</groupId>
-			<artifactId>nexus-staging-maven-plugin</artifactId>
-			<version>1.5.1</version>
-			<executions>
-			<execution>
-			<id>default-deploy</id>
-			<phase>deploy</phase>
-			<goals>
-			<goal>deploy</goal>
-			</goals>
-			</execution>
-			</executions>
-			<configuration>
-			<serverId>nexus</serverId>
-			<nexusUrl>http://localhost/nexus/</nexusUrl>
-			<skipStaging>true</skipStaging>
-			</configuration>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.5.1</version>
+				<executions>
+					<execution>
+						<id>default-deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+				<serverId>mvntsk</serverId>
+				<nexusUrl>http://localhost/nexus/</nexusUrl>
+				<skipStaging>true</skipStaging>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
